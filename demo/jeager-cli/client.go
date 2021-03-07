@@ -47,7 +47,7 @@ func main() {
 	}
 
 	ctx := opentracing.ContextWithSpan(context.Background(), rootSpan)
-	fmt.Printf("client ctx: %s\n", ctx)
+	fmt.Printf("jeager-cli ctx: %s\n", ctx)
 	clientSpan, _ := opentracing.StartSpanFromContext(ctx, "send-request")
 	defer clientSpan.Finish()
 

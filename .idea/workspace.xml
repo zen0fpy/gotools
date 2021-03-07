@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56ce22ef-5e19-48e0-a623-d454cc01ab03" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/main/pyroscope/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/main/badger/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/promes/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/client/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo/client/client.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/pyroscope/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo/main/pyroscope/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/middlewares/cors.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/middlewares/cors.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/middlewares/requestid.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/middlewares/requestid.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/middlewares/tracer.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/middlewares/tracer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/monitor/gops.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/monitor/gops.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/monitor/pprof.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/monitor/pprof.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/monitor/prometheus.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/monitor/prometheus.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/monitor/trace.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/monitor/trace.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,9 +55,43 @@
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\zen0fpy\gotools\demo\promes" />
+      <recent name="D:\zen0fpy\gotools\demo" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.go build gotools/demo/promes">
+    <configuration name="go build gotools/demo/promes" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gotools" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/demo/promes/main.go" />
+      <package value="gotools/demo/promes" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build gotools/demo/promes/random" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gotools" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/demo/promes/random/main.go" />
+      <package value="gotools/demo/promes/random" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build gotools/main/badger" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gotools" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main/badger/main.go" />
+      <package value="gotools/main/badger" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build gotools/main/pyroscope" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gotools" />
       <working_directory value="$PROJECT_DIR$" />
@@ -60,6 +103,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build gotools/demo/promes" />
+        <item itemvalue="Go Build.go build gotools/demo/promes/random" />
+        <item itemvalue="Go Build.go build gotools/main/badger" />
         <item itemvalue="Go Build.go build gotools/main/pyroscope" />
       </list>
     </recent_temporary>
@@ -69,43 +115,48 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add make file" />
-    <option name="LAST_COMMIT_MESSAGE" value="add make file" />
+    <MESSAGE value="add pyroscope monitor platofrom" />
+    <option name="LAST_COMMIT_MESSAGE" value="add pyroscope monitor platofrom" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state x="355" y="47" key="CommitChangelistDialog2" timestamp="1615001911139">
+    <state x="355" y="47" key="CommitChangelistDialog2" timestamp="1615091118778">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state x="355" y="47" key="CommitChangelistDialog2/0.0.1500.960@0.0.1500.960" timestamp="1615001911139" />
-    <state x="532" y="222" key="FileChooserDialogImpl" timestamp="1615001812115">
+    <state x="355" y="47" key="CommitChangelistDialog2/0.0.1500.960@0.0.1500.960" timestamp="1615091118778" />
+    <state x="532" y="222" key="FileChooserDialogImpl" timestamp="1615091166256">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state x="532" y="222" key="FileChooserDialogImpl/0.0.1500.960@0.0.1500.960" timestamp="1615001812115" />
-    <state width="1458" height="218" key="GridCell.Tab.0.bottom" timestamp="1615088442856">
+    <state x="532" y="222" key="FileChooserDialogImpl/0.0.1500.960@0.0.1500.960" timestamp="1615091166256" />
+    <state width="1458" height="218" key="GridCell.Tab.0.bottom" timestamp="1615135223078">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="218" key="GridCell.Tab.0.bottom/0.0.1500.960@0.0.1500.960" timestamp="1615088442856" />
-    <state width="1458" height="218" key="GridCell.Tab.0.center" timestamp="1615088442856">
+    <state width="1458" height="218" key="GridCell.Tab.0.bottom/0.0.1500.960@0.0.1500.960" timestamp="1615135223078" />
+    <state width="1458" height="218" key="GridCell.Tab.0.center" timestamp="1615135223078">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="218" key="GridCell.Tab.0.center/0.0.1500.960@0.0.1500.960" timestamp="1615088442856" />
-    <state width="1458" height="218" key="GridCell.Tab.0.left" timestamp="1615088442856">
+    <state width="1458" height="218" key="GridCell.Tab.0.center/0.0.1500.960@0.0.1500.960" timestamp="1615135223078" />
+    <state width="1458" height="218" key="GridCell.Tab.0.left" timestamp="1615135223078">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="218" key="GridCell.Tab.0.left/0.0.1500.960@0.0.1500.960" timestamp="1615088442856" />
-    <state width="1458" height="218" key="GridCell.Tab.0.right" timestamp="1615088442856">
+    <state width="1458" height="218" key="GridCell.Tab.0.left/0.0.1500.960@0.0.1500.960" timestamp="1615135223078" />
+    <state width="1458" height="218" key="GridCell.Tab.0.right" timestamp="1615135223078">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="218" key="GridCell.Tab.0.right/0.0.1500.960@0.0.1500.960" timestamp="1615088442856" />
+    <state width="1458" height="218" key="GridCell.Tab.0.right/0.0.1500.960@0.0.1500.960" timestamp="1615135223078" />
     <state x="252" y="125" key="SettingsEditor" timestamp="1615001814097">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="252" y="125" key="SettingsEditor/0.0.1500.960@0.0.1500.960" timestamp="1615001814097" />
-    <state x="343" y="213" key="Vcs.Push.Dialog.v2" timestamp="1615001915004">
+    <state x="343" y="213" key="Vcs.Push.Dialog.v2" timestamp="1615091128936">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state x="343" y="213" key="Vcs.Push.Dialog.v2/0.0.1500.960@0.0.1500.960" timestamp="1615001915004" />
+    <state x="343" y="213" key="Vcs.Push.Dialog.v2/0.0.1500.960@0.0.1500.960" timestamp="1615091128936" />
+    <state x="528" y="341" key="com.goide.refactor.move.GoMoveDeclarationDialog" timestamp="1615097437478">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="528" y="341" key="com.goide.refactor.move.GoMoveDeclarationDialog/0.0.1500.960@0.0.1500.960" timestamp="1615097437478" />
   </component>
 </project>
