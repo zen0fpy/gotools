@@ -2,13 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56ce22ef-5e19-48e0-a623-d454cc01ab03" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/pyroscope/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/client/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
   </component>
   <component name="GOROOT" path="$PROJECT_DIR$/../../install/Go" />
   <component name="Git.Settings">
@@ -27,6 +36,8 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -37,20 +48,64 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
+  <component name="RunManager">
+    <configuration name="go build gotools/main/pyroscope" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gotools" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main/pyroscope/main.go" />
+      <package value="gotools/main/pyroscope" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build gotools/main/pyroscope" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add make file" />
+    <option name="LAST_COMMIT_MESSAGE" value="add make file" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
+    <state x="355" y="47" key="CommitChangelistDialog2" timestamp="1615001911139">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="355" y="47" key="CommitChangelistDialog2/0.0.1500.960@0.0.1500.960" timestamp="1615001911139" />
     <state x="532" y="222" key="FileChooserDialogImpl" timestamp="1615001812115">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="532" y="222" key="FileChooserDialogImpl/0.0.1500.960@0.0.1500.960" timestamp="1615001812115" />
+    <state width="1458" height="218" key="GridCell.Tab.0.bottom" timestamp="1615088442856">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state width="1458" height="218" key="GridCell.Tab.0.bottom/0.0.1500.960@0.0.1500.960" timestamp="1615088442856" />
+    <state width="1458" height="218" key="GridCell.Tab.0.center" timestamp="1615088442856">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state width="1458" height="218" key="GridCell.Tab.0.center/0.0.1500.960@0.0.1500.960" timestamp="1615088442856" />
+    <state width="1458" height="218" key="GridCell.Tab.0.left" timestamp="1615088442856">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state width="1458" height="218" key="GridCell.Tab.0.left/0.0.1500.960@0.0.1500.960" timestamp="1615088442856" />
+    <state width="1458" height="218" key="GridCell.Tab.0.right" timestamp="1615088442856">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state width="1458" height="218" key="GridCell.Tab.0.right/0.0.1500.960@0.0.1500.960" timestamp="1615088442856" />
     <state x="252" y="125" key="SettingsEditor" timestamp="1615001814097">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="252" y="125" key="SettingsEditor/0.0.1500.960@0.0.1500.960" timestamp="1615001814097" />
+    <state x="343" y="213" key="Vcs.Push.Dialog.v2" timestamp="1615001915004">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="343" y="213" key="Vcs.Push.Dialog.v2/0.0.1500.960@0.0.1500.960" timestamp="1615001915004" />
   </component>
 </project>

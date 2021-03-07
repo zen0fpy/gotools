@@ -8,6 +8,7 @@ import (
 	"github.com/opentracing/opentracing-go"
 	"github.com/opentracing/opentracing-go/ext"
 	jlog "github.com/opentracing/opentracing-go/log"
+	"gotools/pkg/monitor"
 	"io/ioutil"
 	"log"
 	"net/http"
