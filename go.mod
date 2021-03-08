@@ -4,6 +4,7 @@ go 1.15
 
 require (
 	github.com/HdrHistogram/hdrhistogram-go v1.0.1 // indirect
+	github.com/Shopify/sarama v1.28.0
 	github.com/dgraph-io/badger/v3 v3.2011.1
 	github.com/golang/protobuf v1.4.2
 	github.com/google/gops v0.3.16
