@@ -10,6 +10,7 @@ require (
 	github.com/google/gops v0.3.16
 	github.com/grpc-ecosystem/go-grpc-middleware v1.2.2
 	github.com/grpc-ecosystem/go-grpc-prometheus v1.2.0 // indirect
+	github.com/olivere/elastic/v7 v7.0.22
 	github.com/opentracing/opentracing-go v1.2.0
 	github.com/prometheus/client_golang v1.5.1
 	github.com/pyroscope-io/pyroscope v0.0.25
