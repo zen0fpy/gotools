@@ -5,10 +5,12 @@ import (
 	"crypto/tls"
 	"crypto/x509"
 	"fmt"
+	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/grpclog"
 	"gotools/demo/grpc_demo/auth"
+	"gotools/demo/grpc_demo/interceptor"
 	hello "gotools/demo/grpc_demo/proto"
 	pb "gotools/demo/grpc_demo/proto"
 	"io/ioutil"
@@ -75,7 +77,9 @@ func main() {
 		ClientCAs:    certPool,
 	})
 
-	s := grpc.NewServer(grpc.Creds(creds))
+	s := grpc.NewServer(grpc.Creds(creds), grpc.UnaryInterceptor(
+		grpc_middleware.ChainUnaryServer(interceptor.LogReq, interceptor.Filter),
+	))
 
 	helloService := NewHelloService()
 	hello.RegisterHelloServer(s, helloService)
