@@ -8,6 +8,7 @@ import (
 	"github.com/opentracing/opentracing-go"
 	"github.com/opentracing/opentracing-go/ext"
 	jlog "github.com/opentracing/opentracing-go/log"
+	"gotools/pkg/monitor"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -46,7 +47,7 @@ func main() {
 	}
 
 	ctx := opentracing.ContextWithSpan(context.Background(), rootSpan)
-	fmt.Printf("client ctx: %s\n", ctx)
+	fmt.Printf("jeager-cli ctx: %s\n", ctx)
 	clientSpan, _ := opentracing.StartSpanFromContext(ctx, "send-request")
 	defer clientSpan.Finish()
 
