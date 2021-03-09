@@ -4,3 +4,5 @@ config.yml
 ../../config.yml
 ../../../../config.yml
 ../../../config.yml
+*.out
+*.html
