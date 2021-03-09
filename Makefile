@@ -18,7 +18,6 @@ tools:
 	go get github.com/jgautheron/goconst/cmd/goconst # 重复字符串，提取为常量
 	go get honnef.co/go/tools/cmd/staticcheck # 静态检查
 
-
 golangci-lint:
 	golangci-lint run -D errcheck --build-tags 'quic kcp'
 
@@ -41,7 +40,7 @@ build-all:
 	go build -tags "kcp quic" ./...
 
 test:
-	go test -race -tags "kcp quic" ./...
+	go test -race -tags "hello" --cover -v -coverprofile cover.out ./...
 
 cover:
 	gocov test -tags "kcp quic" ./... | gocov-html > cover.html

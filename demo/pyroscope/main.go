@@ -12,6 +12,6 @@ func main() {
 	})
 	for {
 
-		fmt.Printf("test \n")
+		fmt.Printf("tests \n")
 	}
 }

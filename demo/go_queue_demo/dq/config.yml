@@ -1,0 +1,22 @@
+Producer:
+  - Beanstalk:
+    Endpoint: 121.5.26.78:6767
+    Tube: tube
+  - Beanstalk:
+    Endpoint: 121.5.26.78:6868
+    Tube: tube
+
+Consumer:
+  Beanstalks:
+    - Beanstalk:
+      Endpoint: 121.5.26.78:6767
+      Tube: tube
+    - Beanstalk:
+      Endpoint: 121.5.26.78:6868
+      Tube: tube
+  Redis:
+    Host: 121.5.26.78:7963
+    Type: node
+    Pass: g;<4R_dm(&vuCR
+
+

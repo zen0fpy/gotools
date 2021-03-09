@@ -1,4 +1,4 @@
-package test
+package tests
 
 func Test1() bool {
 	var v string

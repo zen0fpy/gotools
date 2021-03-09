@@ -18,7 +18,7 @@ func SyncConsumeMessage() {
 		log.Fatalf("fail to create consumer, %s\n", err.Error())
 	}
 
-	topic := "test"
+	topic := "tests"
 	partitionList, err := consumer.Partitions(topic)
 	if err != nil {
 		log.Fatalf("failed to get partitions of topic %s\n", topic)

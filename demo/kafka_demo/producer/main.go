@@ -28,7 +28,7 @@ func AsyncProduceMessage() {
 	defer producer.Close()
 
 	message := &sarama.ProducerMessage{
-		Topic: "test",
+		Topic: "tests",
 		Key:   sarama.StringEncoder("hello"),
 	}
 	var value string
@@ -57,7 +57,7 @@ func SyncProducMessage() {
 	config.Producer.Partitioner = sarama.NewRandomPartitioner
 
 	msg := &sarama.ProducerMessage{
-		Topic: "test",
+		Topic: "tests",
 		Key:   sarama.StringEncoder("sync_producer_key"),
 		Value: sarama.StringEncoder("sync_producer_value_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"),
 	}
