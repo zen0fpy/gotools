@@ -31,7 +31,7 @@ func main() {
 
 	var c = config.Config{
 		ShardGroups: []config.ShardGroupConfig{
-			{ShardNode: "tcp://127.0.0.1:9000"},
+			{ShardNode: "tcp://user:password@127.0.0.1:9000"},
 		},
 	}
 
