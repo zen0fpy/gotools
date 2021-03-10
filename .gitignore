@@ -6,3 +6,6 @@ config.yml
 ../../../config.yml
 *.out
 *.html
+
+../../../*.exe
+../../../../*.exe
