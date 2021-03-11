@@ -6,6 +6,7 @@ require (
 	github.com/HdrHistogram/hdrhistogram-go v1.0.1 // indirect
 	github.com/Shopify/sarama v1.28.0
 	github.com/dgraph-io/badger/v3 v3.2011.1
+	github.com/globalsign/mgo v0.0.0-20181015135952-eeefdecb41b8
 	github.com/golang/protobuf v1.4.3
 	github.com/google/gops v0.3.16
 	github.com/google/uuid v1.1.2
