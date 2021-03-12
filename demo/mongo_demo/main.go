@@ -65,4 +65,9 @@ func main() {
 		log.Fatalf("delete %s\n", err.Error())
 	}
 
+	// batch query
+
+	// batch update
+
+	// batch delete
 }
