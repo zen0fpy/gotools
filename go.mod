@@ -24,6 +24,8 @@ require (
 	github.com/uber/jaeger-client-go v2.25.0+incompatible
 	github.com/uber/jaeger-lib v2.4.0+incompatible // indirect
 	go.etcd.io/etcd v3.3.25+incompatible
+	go.uber.org/goleak v1.1.10
+	golang.org/x/exp v0.0.0-20210220032938-85be41e4509f // indirect
 	google.golang.org/grpc v1.29.1
 	google.golang.org/protobuf v1.25.0
 )
