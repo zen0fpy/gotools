@@ -1,0 +1,15 @@
+[Unit]
+Description=Ectd
+Documentation=https://etcd.io
+After=network.target
+
+[Service]
+ExecStart=/usr/local/etcd-v3.4.15-linux-amd64/etcd --listen-client-urls 'http://172.17.57.69:2379'  --data-dir /data/etcd/  --advertise-client-urls 'http://172.17.57.69:2379'
+PermissionsStartOnly=true
+PIDFile=/var/run/etcd.pid
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStop=/bin/kill -s QUIT $MAINPID
+Type=simple
+
+[Install]
+WantedBy=multi-user.target

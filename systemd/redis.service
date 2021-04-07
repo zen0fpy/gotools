@@ -1,0 +1,15 @@
+[Unit]
+Description=Reids
+Documentation=https://redis.io
+After=network.target
+
+[Service]
+ExecStart=/usr/local/redis-6.2.1/src/redis-server /usr/local/redis-6.2.1/redis.conf
+PermissionsStartOnly=true
+PIDFile=/var/run/redis_6379.pid
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStop=/bin/kill -s QUIT $MAINPID
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
