@@ -9,7 +9,7 @@ PermissionsStartOnly=true
 PIDFile=/var/run/redis_6379.pid
 ExecReload=/bin/kill -s HUP $MAINPID
 ExecStop=/bin/kill -s QUIT $MAINPID
-Type=simple
+Type=forking
 
 [Install]
 WantedBy=multi-user.target
