@@ -8,11 +8,15 @@ require (
 	github.com/coreos/etcd v3.3.13+incompatible
 	github.com/dgraph-io/badger/v3 v3.2011.1
 	github.com/globalsign/mgo v0.0.0-20181015135952-eeefdecb41b8
+	github.com/go-playground/universal-translator v0.17.0 // indirect
+	github.com/go-playground/validator v9.31.0+incompatible // indirect
+	github.com/go-playground/validator/v10 v10.5.0
 	github.com/golang/protobuf v1.4.3
 	github.com/google/gops v0.3.16
 	github.com/google/uuid v1.1.2
 	github.com/grpc-ecosystem/go-grpc-middleware v1.2.2
 	github.com/grpc-ecosystem/go-grpc-prometheus v1.2.0 // indirect
+	github.com/leodido/go-urn v1.2.1 // indirect
 	github.com/olivere/elastic/v7 v7.0.22
 	github.com/opentracing/opentracing-go v1.2.0
 	github.com/prometheus/client_golang v1.8.0
